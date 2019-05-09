@@ -4,6 +4,12 @@ html, body
     height: 100%;
 }
 
+.zero
+{
+    margin: 0;
+    padding: 0;
+}
+
 .noir
 {
     color: black;
