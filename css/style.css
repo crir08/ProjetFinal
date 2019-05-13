@@ -20,6 +20,11 @@ html, body
     color: white;
 }
 
+.bleu
+{
+    color: deepskyblue;
+}
+
 .bgBanniere
 {
     background-image: url("../img/banniere.jpg");
@@ -56,6 +61,12 @@ html, body
     padding-bottom: 50px;
 }
 
+.paddingFontAwesome
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .row100
 {
     height: 100%;
@@ -73,8 +84,36 @@ html, body
     background-size: cover;
 }
 
+.parallax2
+{
+    background-image: url("../img/parallaxe2.jpg");
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    .bgBanniere
+    {
+        background-image: url("../img/banniereCell.jpg");
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px){
+    .bgBanniere
+    {
+        background-image: url("../img/banniereTablette.jpg");
+    }
+}
+
+/* Menu navbar */
 .navbar {
-    background-color: #ff0000;
+    /*background-color: #ff0000;*/
+    background-color: deepskyblue;
 }
 .navbar .navbar-brand {
     color: #000000;
