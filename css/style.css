@@ -33,6 +33,14 @@ html, body
     background-repeat: no-repeat;
 }
 
+.bgContact
+{
+    background-image: url("../img/contact.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .bgBleu
 {
     background-color: deepskyblue;
@@ -47,6 +55,11 @@ html, body
 {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.paddingBtnSubmit
+{
+    padding-top: 15px;
 }
 
 .padding
@@ -70,6 +83,21 @@ html, body
 .row100
 {
     height: 100%;
+}
+
+.row75
+{
+    height: 75%;
+}
+
+.row37
+{
+    height: 37.5%;
+}
+
+.row25
+{
+    height: 25%;
 }
 
 .parallax
