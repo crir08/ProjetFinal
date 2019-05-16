@@ -80,6 +80,11 @@ html, body
     padding-bottom: 50px;
 }
 
+.paddingBottom
+{
+    padding-bottom: 50px;
+}
+
 .row100
 {
     height: 100%;

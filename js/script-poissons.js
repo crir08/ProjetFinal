@@ -1,7 +1,10 @@
+AOS.init();
+
 $('#boutonChangerPoissons').click(function () {
     if ($('#boutonChangerPoissons').html() == "Voir d'autres poissons"){
         $('#boutonChangerPoissons').html("Retour aux autres poissons");
 
+        $('h2').css("color", "red");
         // Changement des titres
         $('#titreBrochet').html("Le maskinongé");
         $('#titreTruite').html("La perchaude");
@@ -17,6 +20,8 @@ $('#boutonChangerPoissons').click(function () {
 
     else{
         $('#boutonChangerPoissons').html("Voir d'autres poissons");
+
+        $('h2').css("color", "deepskyblue");
 
         // Changement des titres
         $('#titreBrochet').html("Le brochet");
