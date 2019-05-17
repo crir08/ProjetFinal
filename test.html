@@ -2,19 +2,215 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tout savoir sur la pêche - Portfolio</title>
+    <title>Tout savoir sur la pêche - Contact</title>
     <link rel="icon" type="image/png" href="img/logo.png"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="img/logo.png" title="Logo de poisson" alt="Logo de poisson" width="45px"></a>
 
-<img class="img-fluid" src="img/img9.jpg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-angle-double-down"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="poissons.html">Les poissons du Québec</a></li>
+                <li class="nav-item"><a class="nav-link" href="leurres.html">Les leurres</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-xl-1 col-md-8">
+                <img class="img-fluid" src="img/logo.png" alt="logo" height="150" width="150">
+            </div>
+            <div class="form-group col-xl-2 col-md-4">
+                <h1 class="rouge">Air Canada</h1>
+                <p>1 (888) 247-2262</p>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="offset-xl-1 col-xl-10">
+                <h1 class="text-center h1Padding">Recherche d'un forfait de voyage</h1>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-xl-2">
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+            </div>
+            <div class="form-group col-xl-2">
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-xl-4">
+                <input type="text" class="form-control" id="addresse" placeholder="Adresse">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-xl-2">
+                <input type="text" class="form-control" id="ville" placeholder="Ville">
+            </div>
+            <div class="form-group col-xl-1">
+                <input type="text" class="form-control" id="zip" placeholder="Code postal">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-xl-3">
+                <input type="tel" class="form-control" id="tel" placeholder="Téléphone">
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-xl-2">
+                <label for="choixDestination">Destination</label>
+                <select id="choixDestination" class="form-control">
+                    <option selected>Veuillez choisir...</option>
+                    <option>Mexique</option>
+                    <option>France</option>
+                    <option>Colombie</option>
+                    <option>Cuba</option>
+                    <option>Espagne</option>
+                    <option>Grèce</option>
+                    <option>Italie</option>
+                </select>
+            </div>
+            <div class="form-group padding col-xl-1">
+                <button type="button" class="btn btn-primary btnPadding text-center" data-toggle="modal" data-target="#photos">Photos</button>
+            </div>
+
+
+        </div>
+        <div class="form-row">
+            <div class="form-group col-xl-2">
+                <label for="retour">Date de départ</label>
+                <input type="date" class="form-control" id="depart" placeholder="Date de départ">
+            </div>
+            <div class="form-group col-xl-2">
+                <label for="retour">Date de retour</label>
+                <input type="date" class="form-control" id="retour" placeholder="Date de retour">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-xl-2">
+                <label for="nbAdultes">Nombre d'adultes</label>
+                <select id="nbAdultes" class="form-control">
+                    <option selected>Veuillez choisir...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="form-group col-xl-2">
+                <label for="nbEnfants">Nombre d'enfants</label>
+                <select id="nbEnfants" class="form-control">
+                    <option selected>Veuillez choisir...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <legend class="col-form-label">Mode de transport</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="train">
+                    <label class="form-check-label" for="train">Train</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="avion">
+                    <label class="form-check-label" for="avion">Avion</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <legend class="col-form-label">Type de siège</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="econo">
+                    <label class="form-check-label" for="econo">Classe économique</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="first">
+                    <label class="form-check-label" for="first">Première classe</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <legend class="col-form-label">Caractéristiques de l'hôtel</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="toutInclus">
+                    <label class="form-check-label" for="toutInclus">Tout inclus</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="plage">
+                    <label class="form-check-label" for="plage">Sur la plage</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="golf">
+                    <label class="form-check-label" for="golf">Près d'un golf</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.204459239875!2d-73.74767008447954!3d45.465685079100915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93d7753d8c92b%3A0x1e30a8791014678d!2sA%C3%A9roport+international+Pierre-Elliott-Trudeau+de+Montr%C3%A9al!5e0!3m2!1sfr!2sca!4v1552419358641" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Rechercher</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Le pied-de-page du site web -->
+<footer>
+    <div class="container-fluid bgBleu">
+        <div class="row align-items-center paddingFooter">
+            <div class="col-xl-1 col-md-1 col-2">
+                <img class="img-fluid" src="img/logo.png" title="Logo de sushi" alt="Logo de sushi" width="45px">
+            </div>
+            <div class="text-left col-xl-3 col-md-3 col-10">
+                <h6>Tout savoir sur la pêche</h6>
+            </div>
+            <div class="offset-xl-2 col-xl-2 offset-md-0 col-md-2 offset-2 col-3">
+                <h6>Rejoignez-nous:</h6>
+            </div>
+            <div class="col-xl-1 col-2">
+                <i class="fab fa-youtube fa-2x"></i>
+            </div>
+            <div class="col-xl-1 col-2">
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </div>
+            <div class="col-xl-1 col-2">
+                <i class="fab fa-twitter fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/script-portfolio.js"></script>
 </body>
 </html>
